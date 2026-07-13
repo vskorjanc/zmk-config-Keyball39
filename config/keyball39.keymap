@@ -80,6 +80,7 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <35 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
             flavor = "tap-preferred";
+            hold-trigger-on-release;
         };
 
         HML: HML {
@@ -91,6 +92,7 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 36>;
             flavor = "tap-preferred";
+            hold-trigger-on-release;
         };
 
         HMRGui: HMRGui {
@@ -131,10 +133,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp Q           &kp W            &kp E                &kp R                   &kp T                                &kp Y            &kp U                   &kp I                &kp O            &kp P
-&HMLGui LGUI A  &HML LEFT_ALT S  &HML LEFT_CONTROL D  &HMLShift LEFT_SHIFT F  &kp G                                &kp H            &HMRShift LEFT_SHIFT J  &HMR LEFT_CONTROL K  &HMR LEFT_ALT L  &HMRGui LGUI SQT
-&kp Z           &kp X            &kp C                &kp V                   &kp B                                &kp N            &kp M                   &kp COMMA            &kp DOT          &kp SLASH
-&none           &none            &none                &lt 6 ESCAPE            &lt 3 SPACE  &lt 5 TAB  &lt 2 ENTER  &lt 1 BACKSPACE                                                                &none
+&kp Q           &kp W            &kp E                &kp R              &kp T                                &kp Y            &kp U              &kp I                &kp O            &kp P
+&HMLGui LGUI A  &HML LEFT_ALT S  &HML LEFT_CONTROL D  &HML LEFT_SHIFT F  &kp G                                &kp H            &HMR LEFT_SHIFT J  &HMR LEFT_CONTROL K  &HMR LEFT_ALT L  &HMRGui LGUI SQT
+&kp Z           &kp X            &kp C                &kp V              &kp B                                &kp N            &kp M              &kp COMMA            &kp DOT          &kp SLASH
+&none           &none            &none                &lt 6 ESCAPE       &lt 3 SPACE  &lt 5 TAB  &lt 2 ENTER  &lt 1 BACKSPACE                                                           &none
             >;
         };
 
@@ -151,10 +153,10 @@
         function_layer {
             label = "FUN";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9                &none                                         &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &none
-&kp F11  &kp F4  &kp F5  &kp F6                &kp CAPSLOCK                                  &none       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
-&kp F10  &kp F1  &kp F2  &kp F3                &none                                         &none       &none           &none             &none         &none
-&none    &none   &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &none  &none                                                       &bootloader
+&kp F12  &kp F7  &kp F8  &kp F9  &none                       &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &none
+&kp F11  &kp F4  &kp F5  &kp F6  &kp CAPSLOCK                &none       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
+&kp F10  &kp F1  &kp F2  &kp F3  &none                       &none       &none           &none             &none         &none
+&none    &none   &none   &none   &none         &none  &none  &none                                                       &bootloader
             >;
         };
 
