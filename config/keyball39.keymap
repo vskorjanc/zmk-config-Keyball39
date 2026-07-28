@@ -150,13 +150,13 @@
             >;
         };
 
-        function_layer {
-            label = "FUN";
+        symbol_layer {
+            label = "SYM";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &none                       &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &none
-&kp F11  &kp F4  &kp F5  &kp F6  &kp CAPSLOCK                &none       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
-&kp F10  &kp F1  &kp F2  &kp F3  &none                       &none       &none           &none             &none         &none
-&none    &none   &none   &none   &none         &none  &none  &none                                                       &bootloader
+&kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
+&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET              &kp PLUS                       &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
+&kp TILDE       &kp EXCL       &kp AT_SIGN   &kp HASH               &kp PIPE                       &none   &none           &none             &none         &none
+&trans          &trans         &trans        &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS    &kp UNDERSCORE  &none  &none                                                                 &none
             >;
         };
 
